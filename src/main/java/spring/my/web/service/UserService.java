@@ -6,4 +6,6 @@ public interface UserService {
 
 	public int insertUser(UserVO uv);
 
+	public UserVO login(UserVO uv);
+
 }

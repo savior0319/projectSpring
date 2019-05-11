@@ -14,4 +14,15 @@
 		NOW())
 	</insert>
 	
+	<select id="selectLogin" parameterType="user" resultType="user">
+        SELECT 
+        USER_ID AS userId,
+        USER_PASSWORD AS userPassword,
+        USER_NAME AS userName,
+        USER_GENDER AS userGender,
+        INSERT_DATE AS insertDate
+        FROM USERTBL
+        WHERE USER_ID = #{userId}
+	</select>
+	
 </mapper>

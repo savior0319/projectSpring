@@ -15,4 +15,8 @@ public class UserDAO {
 		return session.insert("user.insertUser", uv);
 	}
 
+	public UserVO selectLogin(SqlSessionTemplate session, UserVO uv) {
+		return session.selectOne("user.selectLogin", uv);
+	}
+
 }

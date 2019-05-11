@@ -24,4 +24,10 @@ public class UserServiceImpl implements UserService {
 		return ud.insertUser(session, uv);
 	}
 
+	@Override
+	public UserVO login(UserVO uv) {
+		return ud.selectLogin(session, uv);
+
+	}
+
 }
